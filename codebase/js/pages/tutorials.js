@@ -1,11 +1,14 @@
-$(document).ready(function () {
+var $TutorialsSelector = $("#TutorialsList");
+
+//$(document).ready(function () {
+$(document).on('pageshow', '#tutorials', function () {
 	var unsortedTutorials = getTutorials();
     var tutorials = JSLINQ(unsortedTutorials)
             .OrderBy(function (item) { return item.title; });
     
-    var li = createSessionLiElement(tutorials, 'TutorialPopupDetails', 'TutorialLink');
-    
-    $("#TutorialsList").html(li);
+    var div = createSessionDivElement(tutorials);
+    $TutorialsSelector.html(div);
+    $TutorialsSelector.collapsibleset();
     
     $(".topcoat-list__item").click(function (sender) {
         var id = sender.currentTarget.getAttribute('id');

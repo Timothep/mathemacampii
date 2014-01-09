@@ -1,41 +1,46 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<title>Mathema Campii</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content=" user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        
+        <title>Mathema Campii</title>
+        
+        <link rel="stylesheet" href="../css/jquery.mobile-1.4.0.min.css" />
+        <script src="../js/lib/jquery-1.9.1.min.js"></script>
+        <script src="../js/lib/jquery.mobile-1.4.0.min.js"></script>
+        
+        <link rel="stylesheet" href="../css/MC_02.min.css" />
+        <link rel="stylesheet" href="../css/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/MC_Corrections.css" />
+        <link rel="stylesheet" type="text/css" href="../css/MC_Custom.css" />
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-</head>
-<body>
+    </head>
+    <body>
+        
+        <div data-role="page" id="speakers" data-theme="a">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
+                <a href="home.html" data-icon="back" rel="external">Back</a>
+                <h1>Sprecher</h1>
+            </div>
+            <div data-role="content" data-theme="a">
+                <div id="SpeakersList" data-role="collapsible-set" data-filter="true" data-filter-placeholder="Suchen..." data-mini="true">
+                </div>
+            </div>
+        </div>
 
-	<div id="Speakers">
-		<a href="home.html">Home</a>
+        <script type="text/javascript" src="../js/lib/JSLINQ.js"></script>
+	    <script type="text/javascript" src="../js/pages/home.js"></script>
+	    <script type="text/javascript" src="../js/data/repository.js"></script>
+	    <script type="text/javascript" src="../js/data/metaData.js"></script>
+	    <script type="text/javascript" src="../js/data/talksData.js"></script>
+        <script type="text/javascript" src="../js/data/speakersData.js"></script>
+        
+        <script type="text/javascript" src="../js/pages/speakers.js"></script>
 
-		<div class="topcoat-navigation-bar">
-		    <div class="topcoat-navigation-bar__item center full">
-		        <h1 class="topcoat-navigation-bar__title">Speakers</h1>
-		    </div>
-		</div>
+        <script type="text/javascript" src="../../cordova.js"></script>
 
-		<div class="topcoat-list SpeakersContent">
-			<ul id="SpeakersList" class="topcoat-list__container"></ul>
-		</div>
-
-		<div class="topcoat-navigation-bar"><div class="topcoat-navigation-bar__item center full">Wissenstransfer par excellence</div></div>
-	</div>
-
-
-	<link rel="stylesheet" type="text/css" href="../css/topcoat-mobile-light.css">
-  	<link rel="stylesheet" href="../css/Custom.css" />
-  	<link rel="stylesheet" href="../css/topcoat-mobile-custom.css" />
-  	<!--<script type="text/javascript" src="../js/lib/zepto.js"></script>--><script type="text/javascript" src="../js/lib/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="../js/lib/JSLINQ.js"></script>
-	<!--<script type='text/javascript' src='../js/lib/fastclick.js'></script>-->
-	<script type="text/javascript" src="../js/pages/home.js"></script>
-	<script type="text/javascript" src="../js/pages/speakers.js"></script>
-	<script type="text/javascript" src="../js/data/repository.js"></script>
-	<script type="text/javascript" src="../../cordova.js"></script>
-
-</body>
+    </body>
 </html>

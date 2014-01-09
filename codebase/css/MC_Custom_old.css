@@ -1,0 +1,215 @@
+img.hcRounded {
+  background: white;
+  border: #E8E9E9 solid 3px;
+  border-radius:99em;
+  box-shadow: 0px 0px 0px 1px #BDBDBE inset;
+}
+
+/*img:active{ 
+  background-color: #002E60;
+}*/
+
+div.mainlinkdiv {
+  float: left; 
+  width: 50%;
+  text-align: center;
+  margin-top: 4px;
+}
+
+div.caption {
+    margin-top: -6px;
+}
+
+.sublinkdiv {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+div.navigation {
+  width: 100%;
+}
+
+.navigation-container {
+  overflow: auto;
+  width: 100%;
+}
+
+div.navigation-top {
+  overflow: auto;
+  width: 100%;
+}
+
+iframe[id^='twitter-widget-']{ width:100%;}
+
+.page{
+  margin: auto;
+  padding-top: 4px;
+  width: 240px;
+}
+
+a.logo {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a.logo:active {
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+    -moz-transform: scale3d(0.9, 0.9, 1);
+    -ms-transform: scale3d(0.9, 0.9, 1);
+    -o-transform: scale3d(0.9, 0.9, 1);
+    transform: scale3d(0.9, 0.9, 1);
+}
+
+/* --- */
+
+div.box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: #002E60;
+  padding: 10px;
+  position: relative;
+  color: white;
+  border-bottom: 4px solid #FECB00;
+  display: inline-block;
+  width: 100%;
+}
+
+div.box div {
+  overflow: hidden;
+}
+
+img.corner {
+  border: none;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+div.LeftColumn {
+    width: 80px;
+    float: left;
+}
+
+div.RightColumn {
+    width: 120px;
+    float: right;
+    overflow: auto;
+}
+
+div.footer {
+    clear: both;
+}
+
+div.footer.content {
+    overflow: auto;
+    width: 100%;
+}
+
+div.mathemaheader {
+    background: #002E60;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    overflow:hidden;
+    vertical-align: middle;
+}
+
+div.mathemaheader div.headerLeft {
+    float: left;
+    width: 170px;
+}
+
+div.headerLeft img {
+    margin: 10px;
+}
+
+div.mathemaheader div.headerRight{
+    width: 42px;
+    float: right;
+    margin-right: 10px;
+}
+
+div.SuperpositionContainer div.TextContainer {
+  text-align: center;
+}
+
+input.searchBox {
+    width: 100%;
+    margin-right: -1px;
+    top: 76px;
+    height: 40px;
+    border: 0;
+    font-size: 20px;
+    padding-left: 20px;
+    background-color: #F0EFF0;
+    position: absolute;
+}
+
+img.ui-li-thumb {
+    padding-top: 1px;
+}
+
+div.scrollable {
+    position: absolute;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-y:scroll; 
+}
+
+div.scrollable.content-nosearch {
+    width: 100%;
+    top: 76px;
+}
+
+div.scrollable.content-search {
+    top: 116px;
+    width: 100%;
+}
+
+div.scrollable.home {
+    width: 240px;
+    top: 76px;
+    overflow-y:auto; 
+}
+
+div.li-wrapper {
+    width: 100%;
+}
+
+div.Li-RightDescription {
+    font-size: 22px;
+    float: left;
+    margin-left: 41px;
+    width: 100%;
+}
+div.Li-RightDescription.Speaker {
+    min-height: 41px;
+}
+
+div.SessionSubtitle {
+    font-size: 18px;
+    margin-left: 41px;
+    float: left;
+}
+
+div.List-LeftColumn{
+  position: absolute;
+  height: 100%;
+  background: #D9DADB;
+  line-height: 100%;
+  /*display: table-cell;
+  vertical-align: middle;*/
+  text-align: center;
+}
+
+div.slot {
+  height: 31px;
+  background-color: #F7D639;
+  width:31px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+

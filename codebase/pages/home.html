@@ -1,101 +1,87 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<title>Mathema Campii</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta charset="utf-8">
-    <meta name="msapplication-tap-highlight" content="no" />
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content=" user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        
+        <title>Mathema Campii</title>
+        
+        <link rel="stylesheet" href="../css/jquery.mobile-1.4.0.min.css" />
+        <script src="../js/lib/jquery-1.9.1.min.js"></script>
+        <script src="../js/lib/jquery.mobile-1.4.0.min.js"></script>
+        
+        <link rel="stylesheet" href="../css/MC_02.min.css" />
+        <link rel="stylesheet" href="../css/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/MC_Corrections.css" />
+        <link rel="stylesheet" type="text/css" href="../css/MC_Custom.css" />
 
-	<div id="HomeView"  >
-		<div class="topcoat-navigation-bar">
-		    <div class="topcoat-navigation-bar__item center full">
-		        <h1 class="topcoat-navigation-bar__title">Mathema Campus</h1>
-		    </div>
-		</div>
+    </head>
+    <body>
+        
+        <div data-role="page" id="home" data-theme="a">
+            <div data-role="header" data-position="inline" data-tap-toggle="false">
+                <img src="../img/mathema_campus_logo.png" class="campus_logo" alt="Mathema Campus Logo" style="padding-top: 10px" />
+            </div>
+            <div data-role="content" data-theme="a">
+                <div class="home_page">
+                    <div id="navigation-bottom">
+                        <div class="navigation-container">
+                            <div class="mainlink">
+                                <a href="#" class="no_text_decoration">
+                                    <img id="newsNavButton" src="../img/icons/speakers_large.png" class="hcRounded" alt="News Link">
+                                    <div class="caption">News</div>
+                                </a>
+                            </div>
+                            <div class="mainlink">
+                                <a href="#TwitterPopup" class="no_text_decoration">
+                                    <img id="twitterNavButton" src="../img/icons/calendar_large.png" class="hcRounded" alt="Twitter Link">
+                                    <div class="caption">Twitter</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navigation-container">
+                            <div class="mainlink">
+                                <a href="calendar.html" class="no_text_decoration" rel="external">
+                                    <img src="../img/icons/calendar_large.png" class="hcRounded" alt="Calendar Link">
+                                    <div class="caption">Calendar</div>
+                                </a>
+                            </div>
+                            <div class="mainlink">
+                                <a href="speakers.html" class="no_text_decoration" rel="external">
+                                    <img src="../img/icons/speakers_large.png" class="hcRounded" alt="Speakers Link">
+                                    <div class="caption">Speakers</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navigation-container">
+                            <div class="mainlink">	
+                                <a href="tutorials.html" class="no_text_decoration" rel="external">
+                                    <img src="../img/icons/calendar_large.png" class="hcRounded" alt="Tutorials Link">
+                                    <div class="caption">Tutorials</div>						
+                                </a>
+                            </div>
+                            <div class="mainlink">
+                                <a href="sessions.html" class="no_text_decoration" rel="external">
+                                    <img src="../img/icons/calendar_large.png" class="hcRounded" alt="Sessions Link">
+                                    <div class="caption">Talks</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="../js/lib/JSLINQ.js"></script>
+	    <script type="text/javascript" src="../js/pages/home.js"></script>
+	    <script type="text/javascript" src="../js/data/repository.js"></script>
+	    <script type="text/javascript" src="../js/data/metaData.js"></script>
+	    <script type="text/javascript" src="../js/data/talksData.js"></script>
+        <script type="text/javascript" src="../js/data/speakersData.js"></script>
+        
+        <script type="text/javascript" src="../../cordova.js"></script>
 
-		<div class="page">
-
-			<div style="overflow: auto; width: 100%">
-				<div class="sublinkdiv">
-					<a href="#">
-						<img id="newsNavButton" src="../img/icons/news.png" class="hcRounded" alt="News Link">
-					</a>					
-					<span style="display: block">News</span>
-				</div>
-				<div class="sublinkdiv">
-					<a href="#TwitterPopup">
-						<img id="twitterNavButton" src="../img/icons/twitter.png" class="hcRounded" alt="Twitter Link">
-					</a>
-					<span style="display: block">#mathemacampus</span>
-				</div>
-
-				<!-- Show/Hide issue
-				<div id="TwitterPopup">
-					<a class="twitter-timeline" href="https://twitter.com/search?q=rails" data-widget-id="386904398489612289"></a>
-				</div>
-				-->
-
-				<div class="sublinkdiv">
-					<a href="upcoming.html">
-						<img id="upcomingNavButton" src="../img/icons/upcoming.png" class="hcRounded" alt="Upcoming Link">
-					</a>
-					<span style="display: block">Upcoming</span>
-				</div>
-			</div>
-			
-			<div id="navigation" style="width: 100%;">
-				<div class="navigation-container">
-					<div class="mainlinkdiv">
-						<a href="calendar.html">
-							<img src="../img/icons/calendar.png" class="hcRounded" alt="Calendar Link">
-						</a>
-						<div>Calendar</div>
-					</div>
-					<div class="mainlinkdiv">	
-						<a href="speakers.html">
-							<img src="../img/icons/speakers.png" class="hcRounded" alt="Speakers Link">
-						</a>
-						<div>Speakers</div>
-					</div>
-				</div>
-				<div class="navigation-container">
-					<div class="mainlinkdiv">	
-						<a href="tutorials.html" class="logo">
-							<img src="../img/icons/tutorials.png" class="hcRounded" alt="Tutorials Link">
-						</a>
-						<div>Tutorials</div>						
-					</div>
-				    <div class="mainlinkdiv">
-				        <a href="sessions.html" class="logo">
-				            <img src="../img/icons/talks.png" class="hcRounded" alt="Sessions Link">
-                        </a>
-				        <div>Talks</div>
-				    </div>
-					
-				</div>
-			</div>
-
-		</div>
-
-		<a href="options.html" id="ShowOptionsButton">Options (for dev only)</a>
-		<div class="topcoat-navigation-bar"><div class="topcoat-navigation-bar__item center full">Wissenstransfer par excellence</div></div>
-	</div>
-
-	<link rel="stylesheet" type="text/css" href="../css/topcoat-mobile-light.css">
-  	<link rel="stylesheet" type="text/css" href="../css/custom.css" />
-  	<link rel="stylesheet" type="text/css" href="../css/topcoat-mobile-custom.css" />
-  	<!--<script type="text/javascript" src="../js/lib/zepto.js"></script>--><script type="text/javascript" src="../js/lib/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="../js/lib/JSLINQ.js"></script>
-	<!--<script type='text/javascript' src='../js/lib/fastclick.js'></script>-->
-	<script type="text/javascript" src="../js/pages/home.js"></script>
-	<script type="text/javascript" src="../js/data/repository.js"></script>
-	<script type="text/javascript" src="../js/data/metaData.js"></script>
-	<script type="text/javascript" src="../js/data/talksData.js"></script>
-	<script type="text/javascript" src="../js/data/speakersData.js"></script>
-    <script type="text/javascript" src="../../cordova.js"></script>
-
-</body>
+    </body>
 </html>

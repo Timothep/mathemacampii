@@ -1,0 +1,94 @@
+body {
+    font: 14px Lato !important;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../font/Lato-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../font/Lato-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: url("../font/Lato-Italic.woff") format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    src: url("../font/Lato-BoldItalic.woff") format('woff');
+}
+
+img.campus_logo {
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+img.hcRounded {
+    background: white;
+    border: #E8E9E9 solid 3px !important;
+    border-radius:99em;
+    box-shadow: 0px 0px 0px 1px #BDBDBE inset !important;
+}
+
+div.home_page{
+    margin: auto;
+    /*padding-top: 7px;*/
+    width: 240px;
+}
+
+div.mainlink {
+    float: left; 
+    width: 50%;
+    text-align: center;
+    margin-top: 4px;
+}
+
+div.sublink {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+div.navigation-container {
+    overflow: auto;
+    width: 100%;
+}
+
+div.navigation-top {
+    overflow: auto;
+    width: 100%;
+}
+
+div.caption {
+    margin-top: -2px;
+}
+
+a.no_text_decoration, a.no_text_decoration:visited {
+    color: #002E60;
+    text-decoration: none;
+}
+
+div.floating-slot {
+    position: absolute;
+    background: #FECB00;
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3.item-category {
+    color: #FECB00;
+    background: #818284;
+    margin: 0;
+    padding: 10px;
+}

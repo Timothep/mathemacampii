@@ -1,0 +1,81 @@
+div.ui-header {
+    height: 68px;
+    border-bottom: 8px solid #FECB00 !important;
+}
+
+div.ui-footer { 
+    height: 23px;
+}
+
+div.ui-content.ui-body-a {
+    padding: 0;
+}
+
+/* Collapsible */
+div.ui-collapsible-set.ui-group-theme-inherit.ui-corner-all {
+    margin: 0;
+}
+
+div.ui-collapsible.ui-collapsible-inset.ui-corner-all.ui-collapsible-themed-content.ui-collapsible-collapsed.ui-first-child {
+    border-top-right-radius: 0; border-top-left-radius: 0;
+}
+
+a.ui-collapsible-heading-toggle {
+    /*padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;*/
+    /*height: 51px;*/
+    background: white !important;
+}
+
+h3.ui-collapsible-heading {
+    /*height: 51px;*/
+}
+
+h3 div.speaker-photo-wrapper {
+    /*float: left;
+    height: 51px;*/
+}
+
+h3 div.collapsible-heading {
+    /*padding-left: 48px;
+    padding-top: 18px;*/
+}
+/* END Collapsible */
+
+h1 {
+    font-size: 1.6em !important;
+}
+
+h1.ui-title {
+    padding-top: 18px !important;
+}
+
+div.ui-input-search.ui-shadow-inset.ui-input-has-clear.ui-body-inherit.ui-corner-all {
+    margin: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px;
+    border-left: 0;
+    border-right: 0;
+    height: 41px;
+    background: #F0EFF0;
+}
+
+div.ui-input-search.ui-shadow-inset.ui-input-has-clear.ui-body-inherit.ui-corner-all input {
+    font-size: 18px;
+}
+
+a.ui-collapsible-heading-toggle.ui-btn.ui-btn-inherit.ui-icon-minus {
+    border-bottom: 0;
+}
+
+.ui-body-a {
+    border: 0;
+}
+
+.ui-collapsible-heading, .ui-collapsible-heading>.ui-btn {
+    border-radius: 0;
+}

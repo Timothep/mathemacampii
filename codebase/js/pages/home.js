@@ -47,13 +47,23 @@ $(document).ready(function () {
     $("#SpeakerPopupDetails").bind( "tap", function (){ $(this).popup('close'); });
     $("#TutorialPopupDetails").bind( "tap", function (){ $(this).popup('close'); });
   });
+    
+  $('#clock-link').bind("tap", function () {
+      var i = 0;
+  });
+
 });
 
 //Upon showing the options page
 //Refresh the date when the last refresh was made
 $(document).on('pagebeforeshow', '#Options', function () {
     refreshDate();
-  });
+});
+
+$(document).on('collapsibleexpand', "[data-role=collapsible]", function () {
+    var position = $(this).offset().top;
+    $.mobile.silentScroll(position - 76);
+});
 
 //Returns the upcoming talks
 function getUpcomingTalks(){
@@ -206,10 +216,6 @@ function pullDataIfAbsent(){
     updateJSON();
 }
 
-
-
-
-
 $.urlParam = function(name){
     var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
     if(results !== null)
@@ -217,13 +223,52 @@ $.urlParam = function(name){
     return null;
 };
 
-function createSessionLiElement(sessions, linkId, linkClass){
-  var newLi = "";
-  $.each(sessions.items, function (index, session) {
-      newLi += "<li class='topcoat-list__item' id=\"" + session.id + "\">"
-        + "<span>" + session.title + "</span></br>"
-        + "<span>" + session.subtitle + "</span>"
-        + "</li>";
+function createSessionDivElement(sessions) {
+    var newDiv = "";
+    var categories = [];
+
+    for (var index = 0; index < sessions.items.length ; index++) {
+        var session = sessions.items[index];
+        var track = session.timeslot.track;
+        if ($.inArray(track, categories) === -1) {
+            newDiv += categoryHeader(track);
+            categories.push(track);
+        }
+        newDiv += "<div class=\"mc-col-el-start\" id=\"" + session.id + "\" data-role=\"collapsible\" data-iconpos=\"right\" >";
+        newDiv += talkHeader(session);
+        newDiv += talkContent(session);
+        newDiv += "</div>";
+    };
+
+    return newDiv;
+}
+
+function categoryHeader(track) {
+    return "<div id=\"" + track + "\" data-iconpos=\"right\" >"
+            + "<h3 class=\"item-category\">"
+                + "<div>" + track + "</div>"
+                + "</div>"
+            + "</h3>"
+        + "</div>";
+}
+
+function talkHeader( session ) {
+    return "<h3>"
+            + "<div>" + session.shorty + "</div>"
+            + "<div class=\"collapsible-heading\">"
+                + "<div>" + session.title + "</div>"
+                + "<div style=\"font-size: 0.82em;\">" + session.subtitle + "</div>"
+            + "</div>"
+        + "</h3>";
+}
+
+function talkContent( session ) {
+    return "<div><a href=\"calendar.html\" class=\"collapsible-header-link\"><img src=\"../img/icons/clock.png\" class=\"clock-link\"></a></div>"
+        + "<p>" + session.abstract + "</p>";
+}
+
+function deactivateCollapsibleIcons(selector) {
+    selector.find('a.ui-collapsible-heading-toggle').each(function () {
+        $(this).removeClass('ui-btn-icon-right');
     });
-  return newLi;
 }

@@ -1,9 +1,12 @@
-$(document).ready(function () {
+var $CalendarSelector = $("#CalendarList");
+
+$(document).on('pageshow', '#calendar', function () {
 	var unsortedSessions = getAllSessions();
 	var meta = getMetaInfo();   
-	var div = buildCalendarList(unsortedSessions, meta);
 
-	$("#Container").html(div);
+	var div = buildCalendarList(unsortedSessions, meta);
+	$CalendarSelector.html(div);
+	$CalendarSelector.collapsibleset();
 });
 
 function buildCalendarList(unsortedSessions, meta){

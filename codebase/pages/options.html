@@ -8,30 +8,44 @@
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 </head>
 <body>
+    
+    <div id="page_wrapper">
+        <div id="content_wrapper">
+         
+            <!--Header-->
+             <div class="topcoat-navigation-bar mathemaheader">
+                 <div class="topcoat-navigation-bar__item quarter">
+                     <a href="home.html" style="color: white; text-decoration: none">
+                         <span class='icomatic' style="color:#F7D639; font-size: 20px;">backlight</span>
+                     </a>
+                 </div>
+                 <div class="topcoat-navigation-bar__item half center">
+                     <h3>Options</h3>
+                 </div>
+             </div>
 
-	<!-- Start of Options page -->
-	<div data-role="page" id="Options"  >
+            <!--Content-->
+            <div id="Options" class="scrollable content-nosearch">
+                <p id="LastUpdateParagraph">This string should be replaced</p>
+                <a href="#" id="UpdateButton" data-role="button" data-icon="refresh" class="ui-btn-right">Check for update</a>
 
-		<div data-role="header" data-position="fixed">
-			<a href="home.html">Home</a>
-			<h1 id="SessionsTitle">Options</h1>
-		</div><!-- /header -->
-
-		<div data-role="content">
-			<p id="LastUpdateParagraph">This string should be replaced</p>
-			<a href="#" id="UpdateButton" data-role="button" data-icon="refresh" class="ui-btn-right">Check for update</a>
-
-			<p id="DateTimeTesting">Current settings (for testing):</p>
-			<span>Today:</span><input id="TestToday" placeholder="2013-09-02">
-			<span>Now:</span><input id="TestNow" placeholder="9:25">
-			<a href="#" id="SaveDateTime" data-role="button" data-icon="save" class="ui-btn-right">Save</a>
-		</div>
-
-		<div class="topcoat-navigation-bar"><div class="topcoat-navigation-bar__item center full">Wissenstransfer par excellence</div></div>
-	</div>
-
-
-	<link rel="stylesheet" type="text/css" href="../css/topcoat-mobile-light.css">
+                <p id="DateTimeTesting">Current settings (for testing):</p>
+                <span>Today:</span><input id="TestToday" placeholder="2013-09-02">
+                <span>Now:</span><input id="TestNow" placeholder="9:25">
+                <a href="#" id="SaveDateTime" data-role="button" data-icon="save" class="ui-btn-right">Save</a>
+            </div>
+        </div> 
+    </div> 
+        
+    <!--Footer-->
+    <div id="footer_wrapper"> 
+        <div class="topcoat-navigation-bar mathemafooter">
+            <div class="topcoat-navigation-bar__item full"></div>
+        </div>
+    </div>
+    
+    <link rel="stylesheet" type="text/css" href="../css/stickyfooter.css">
+    <link rel="stylesheet" type="text/css" href="../css/topcoat-mobile-light.css">
   	<link rel="stylesheet" href="../css/Custom.css" />
   	<link rel="stylesheet" href="../css/topcoat-mobile-custom.css" />
   	<!--<script type="text/javascript" src="../js/lib/zepto.js"></script>--><script type="text/javascript" src="../js/lib/jquery-1.9.1.min.js"></script>
@@ -40,6 +54,8 @@
 	<script type="text/javascript" src="../js/pages/home.js"></script>
 	<script type="text/javascript" src="../../cordova.js"></script>
 	<script type="text/javascript" src="../js/pages/options.js"></script>
-	
+	<link rel="stylesheet" type="text/css" href="../icon/icomatic.css" />
+    <script type='text/javascript' src='../icon/icomatic.js'></script>
+
 </body>
 </html>
